@@ -1,0 +1,91 @@
+chemprot:
+  data_format: PremiseOnly
+  encoder_type: BERT
+  enable_san: false
+  labels:
+    - CPR:3
+    - CPR:4
+    - CPR:5
+    - CPR:6
+    - CPR:9
+    - 'false'
+  metric_meta:
+  - MicroF1WithoutLastOne
+  n_class: 6
+  task_type: Classification
+
+ddi:
+  data_format: PremiseOnly
+  encoder_type: BERT
+  enable_san: false
+  labels:
+    - int
+    - advise
+    - effect
+    - mechanism
+    - other
+  metric_meta:
+  - MicroF1WithoutLastOne
+  n_class: 5
+  task_type: Classification
+
+ppim:
+  data_format: PremiseOnly
+  encoder_type: BERT
+  enable_san: false
+  labels:
+    - positive
+    - negative
+  metric_meta:
+    - MicroF1WithoutLastOne
+  n_class: 2
+  task_type: RelationExtraction
+
+chr-document:
+  data_format: PremiseOnly
+  encoder_type: BERT
+  enable_san: false
+  labels:
+    - positive
+    - negative
+  metric_meta:
+  - MicroF1WithoutLastOne
+  n_class: 2
+  task_type: RelationExtraction
+
+cdr-document:
+  data_format: PremiseOnly
+  encoder_type: BERT
+  enable_san: false
+  labels:
+    - positive
+    - negative
+  metric_meta:
+  - MicroF1WithoutLastOne
+  n_class: 2
+  task_type: RelationExtraction
+
+cdr-test:
+  data_format: PremiseOnly
+  encoder_type: BERT
+  enable_san: false
+  labels:
+    - positive
+    - negative
+  metric_meta:
+  - MicroF1WithoutLastOne
+  n_class: 2
+  task_type: RelationExtraction
+
+ade:
+  data_format: PremiseOnly
+  encoder_type: BERT
+  enable_san: false
+  labels:
+    - DRUG-AE
+    - DRUG-DOSE
+    - NEG
+  metric_meta:
+  - MicroF1WithoutLastOne
+  n_class: 3
+  task_type: RelationExtraction
