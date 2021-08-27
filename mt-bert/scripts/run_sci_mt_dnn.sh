@@ -21,7 +21,7 @@ test_datasets="ade"
 
 
 
-ROOT="/data1/home/liuxiaofeng/code/bluebert-master/"
+ROOT="/data1/home/liuxiaofeng/code/MGSN/"
 
 #BERT_PATH="$ROOT/model/biobert_cased/biobert.pt"
 #DATA_DIR="$ROOT/bio_data/canonical_data/biobert_cased"
@@ -47,7 +47,7 @@ model_dir="$ROOT/checkpoints/${prefix}_${train_datasets}_${optim}_${epochs}_${lr
 #model_dir="$ROOT/checkpoints_mt/${prefix}_${train_datasets}_${optim}_${epochs}_${lr}_${tstr}"
 #model_dir="$ROOT/checkpoints_engineering/${prefix}_${train_datasets}_${optim}_${epochs}_${lr}_${tstr}"
 log_file="${model_dir}/log.log"
-python mt_bluebert/blue_train.py \
+python mt_bert/blue_train.py \
   --data_dir ${DATA_DIR} \
   --init_checkpoint ${BERT_PATH} \
   --task_def mt_bluebert/blue_task_def.yml \
